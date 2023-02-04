@@ -2,7 +2,7 @@
 // packages needed for this application
 const inquirer = require('inquirer');
 const fs= require('fs');
-const gTeam = require("./dist/page")
+const generateManager = require("./dist/page")
 const path = require('path');
 const emailValidator = require('email-validator');
 
@@ -29,8 +29,12 @@ function init() {
        const manager=new Manager(answers.name,answers.id,answers.email,answers.officeNumber)
        members.push(manager)
        console.log(members)
+       console.log('çreating a readme, one sec')
+       writeFile(`trial.html`, generateManager(members),'utf-8' )
 
    })
+   
 
 }
 init()
+
