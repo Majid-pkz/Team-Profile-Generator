@@ -24,10 +24,11 @@
   "homepage": "https://github.com/Majid-pkz/Team-Profile-Generator#readme",
   "dependencies": {
     "chalk": "^2.4.1",
+    "email-validator": "^2.0.4",
     "inquirer": "8.2.4"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "nodemon": "^2.0.20"
   }
-  
 }

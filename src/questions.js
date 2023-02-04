@@ -1,21 +1,37 @@
-
+const emailValidator = require('email-validator');
+const chalk = require("chalk");
 // an array of questions for user input
 
 const questionsManager = [
     { 
         type:'input',         
         message: 'What is the manager name?',
-        name:'managerName',
+        name:'name',
+        validate: nameInput=>{
+            if(nameInput){return true;}
+            else{
+                console.log('please enter your name')
+                return false;
+            }
+        }
     },
     { 
         type:'input',         
         message: 'what is the manager id?',
-        name:'managerId',
+        name:'id',
     },
     { 
         type:'input',         
         message: 'What is the manager email?',
-        name:'managerEmail',
+        name:'email',
+       validate: email=>{
+        if(!emailValidator.validate(`${email}`)){
+            console.log(chalk.red("\nINCORRECT email format!!!\n"));
+            return false}
+            else return true
+        }
+        
+        
     },
     { 
         type:'input',         
