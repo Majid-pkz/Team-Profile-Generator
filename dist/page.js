@@ -6,14 +6,14 @@ function generateTeam(team) {
         return `
            
         <div class="card m-4 " style="width: 18rem;">
-            <div class="card-header text-bg-primary fs-3 text-center ">
+            <div class="card-header text-bg-primary fs-3 p-2 ">
             <p> ${manager.getName()} </p>
             <p> ${manager.getRole()} </p>            
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">${manager.getId()} </li>
-              <li class="list-group-item">${manager.getEmail()} </li>
-              <li class="list-group-item">${manager.officeNumber} </li>
+              <li class="list-group-item"><span>ID:  </span>${manager.getId()} </li>
+              <li class="list-group-item"><span>Email: </span>${manager.getEmail()} </li>
+              <li class="list-group-item"><span>Office Number: </span>${manager.officeNumber} </li>
             </ul>
          </div>    
     
