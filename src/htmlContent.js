@@ -49,7 +49,7 @@ function generateTeam(team) {
             <ul class="list-group list-group-flush">
               <li class="list-group-item"><span>ID:  </span>${intern.getId()} </li>
               <li class="list-group-item"><span>Email: </span>${intern.getEmail()} </li>
-              <li class="list-group-item"><span>Github username: </span>${intern.getSchool()} </li>
+              <li class="list-group-item"><span>School Name: </span>${intern.getSchool()} </li>
             </ul>
          </div>    
     
