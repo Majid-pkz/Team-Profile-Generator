@@ -23,12 +23,14 @@ Unlicense
 
     
 ### Contributors
-
     
-Majid
-  
-    
+Majid     
 ---
+### Mock-up
+<p align="left">
+    <img src="./Assets/Mock-up.png">
+   
+</p>
   
     
 ### where to find it 
