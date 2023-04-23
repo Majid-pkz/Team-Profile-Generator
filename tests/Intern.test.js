@@ -55,17 +55,17 @@ describe("Intern", () => {
     });
   });
 
-    describe("getSchool", () => {
+  describe("getSchool", () => {
     it("should return the school of intern", () => {
-        const name = "Bob";
-        const id = 1;
-        const email = "bob@gmail.com";
-        const school = "EXD";
-        const intern = new Intern(name, id, email, school);
-        expect(intern.getSchool()).toEqual(school);
+      const name = "Bob";
+      const id = 1;
+      const email = "bob@gmail.com";
+      const school = "EXD";
+      const intern = new Intern(name, id, email, school);
+      expect(intern.getSchool()).toEqual(school);
     });
-    });
-    
+  });
+
   describe("getRole", () => {
     it("should return 'Engineer'", () => {
       const name = "Bob";
@@ -73,7 +73,7 @@ describe("Intern", () => {
       const email = "bob@gmail.com";
       const school = "EXD";
       const intern = new Intern(name, id, email, school);
-      expect(intern.getRole()).toEqual('Intern');
+      expect(intern.getRole()).toEqual("Intern");
     });
   });
 });

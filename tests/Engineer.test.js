@@ -26,7 +26,7 @@ describe("Engineer", () => {
     it("should return the name of engineer", () => {
       const name = "Bob";
       const id = 1;
-      const email ="bob@gmail.com";
+      const email = "bob@gmail.com";
       const github = "git";
       const engineer = new Engineer(name, id, email, github);
       expect(engineer.getName()).toEqual(name);
@@ -37,7 +37,7 @@ describe("Engineer", () => {
     it("should return the id of engineer", () => {
       const name = "Bob";
       const id = 1;
-      const email ="bob@gmail.com";
+      const email = "bob@gmail.com";
       const github = "git";
       const engineer = new Engineer(name, id, email, github);
       expect(engineer.getId()).toEqual(id);
@@ -48,32 +48,32 @@ describe("Engineer", () => {
     it("should return the email of engineer", () => {
       const name = "Bob";
       const id = 1;
-      const email ="bob@gmail.com";
+      const email = "bob@gmail.com";
       const github = "git";
       const engineer = new Engineer(name, id, email, github);
       expect(engineer.getEmail()).toEqual(email);
     });
   });
-    
-    describe("getGithub", () => {
-      it("should return the github username of engineer", () => {
-        const name = "Bob";
-        const id = 1;
-        const email ="bob@gmail.com";
-        const github = "git";
-        const engineer = new Engineer(name, id, email, github);
-        expect(engineer.getGithub()).toEqual(github);
-      });
+
+  describe("getGithub", () => {
+    it("should return the github username of engineer", () => {
+      const name = "Bob";
+      const id = 1;
+      const email = "bob@gmail.com";
+      const github = "git";
+      const engineer = new Engineer(name, id, email, github);
+      expect(engineer.getGithub()).toEqual(github);
     });
+  });
 
   describe("getRole", () => {
     it("should return 'Engineer'", () => {
       const name = "Bob";
       const id = 1;
-      const email ="bob@gmail.com";
+      const email = "bob@gmail.com";
       const github = "git";
       const engineer = new Engineer(name, id, email, github);
-      expect(engineer.getRole()).toEqual('Engineer');
+      expect(engineer.getRole()).toEqual("Engineer");
     });
   });
 });

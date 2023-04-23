@@ -3,33 +3,33 @@ const Manager = require("../lib/Manager");
 describe("Manager", () => {
   describe("Initialization", () => {
     it("should return a new manager object which contains properties of name,id, email and office number when called with the 'new' keyword", () => {
-        const manager = new Manager();
-        expect("name" in manager).toEqual(true);
-        expect("id" in manager).toEqual(true);
-        expect("email" in manager).toEqual(true);
-        expect("officeNumber" in manager).toEqual(true); 
+      const manager = new Manager();
+      expect("name" in manager).toEqual(true);
+      expect("id" in manager).toEqual(true);
+      expect("email" in manager).toEqual(true);
+      expect("officeNumber" in manager).toEqual(true);
     });
     it("should set 'name','id','email' and 'officeNumber' when created", () => {
-        const name = "Bob";
-        const id = 1;
-        const email = "bob@gmail.com";
-        const officeNumber = '101';
-        const manager = new Manager(name, id, email,officeNumber);
-        expect(manager.name).toEqual(name);
-        expect(manager.id).toEqual(id);
-        expect(manager.email).toEqual(email);
-        expect(manager.officeNumber).toEqual(officeNumber);
+      const name = "Bob";
+      const id = 1;
+      const email = "bob@gmail.com";
+      const officeNumber = "101";
+      const manager = new Manager(name, id, email, officeNumber);
+      expect(manager.name).toEqual(name);
+      expect(manager.id).toEqual(id);
+      expect(manager.email).toEqual(email);
+      expect(manager.officeNumber).toEqual(officeNumber);
     });
   });
 
   describe("getName", () => {
     it("should return the name of manager", () => {
-        const name = "Bob";
-        const id = 1;
-        const email = "bob@gmail.com";
-        const officeNumber = "101";
-        const manager = new Manager(name, id, email,officeNumber);
-        expect(manager.getName()).toEqual(name);
+      const name = "Bob";
+      const id = 1;
+      const email = "bob@gmail.com";
+      const officeNumber = "101";
+      const manager = new Manager(name, id, email, officeNumber);
+      expect(manager.getName()).toEqual(name);
     });
   });
 
